@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %} Car-review corpora: поиск {% endblock %}
+
+{% block content %}
+    <div style="text-align: center;">
+        <h3>Результаты</h3>
+        <br>
+            {% for d in ll %}
+                <li>{{d['sentence']}} {{'Источник: ' + d['url']}}. {{"Автор: vk.com/" + d['author']}}.</li>
+                <br>
+            {% endfor %}
+    </div>
+{% endblock %}

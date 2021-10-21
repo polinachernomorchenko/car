@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %} Car-review corpora: список тегов {% endblock %}
+
+{% block content %}
+    <style>
+    table {
+        border-collapse: collapse;
+        border: 1px solid grey;
+        width: 60%;
+        margin-left: 20%;
+        background-image: url(http://hexcolor16.com/f5f5f5-200x200.png);
+    }
+    th {
+        border: 1px solid grey;
+        text-align: center;
+    }
+    td {
+        border: 1px solid grey;
+        text-align: center;
+    }
+    </style>
+    <table>
+        <tr>
+            <th>POS-тег</th>
+            <th>категория</th>
+            <th>пример</th>
+        </tr>
+        <tr><td>ADJ</td><td>имя прилагательное</td><td>красивый</td></tr>
+        <tr><td>ADP</td><td>адлог</td><td>на</td></tr>
+        <tr><td>ADV</td><td>наречие</td><td>идеально</td></tr>
+        <tr><td>AUX</td><td>модальное слово</td><td>быть</td></tr>
+        <tr><td>CCONJ</td><td>сочинительный союз</td><td>и</td></tr>
+        <tr><td>DET</td><td>определитель</td><td>тот</td></tr>
+        <tr><td>INTJ</td><td>междометие</td><td>тьфу</td></tr>
+        <tr><td>NOUN</td><td>имя существительное</td><td>паспорт</td></tr>
+        <tr><td>NUM</td><td>имя числительное</td><td>155</td></tr>
+        <tr><td>PART</td><td>частица</td><td>же</td></tr>
+        <tr><td>PRON</td><td>местоимение</td><td>я</td></tr>
+        <tr><td>PROPN</td><td>имя собственное</td><td>Крым</td></tr>
+        <tr><td>SCONJ</td><td>подчинительный союз</td><td>то</td></tr>
+        <tr><td>SYM</td><td>символ</td><td>€</td></tr>
+        <tr><td>VERB</td><td>глагол (в т.ч. причастие и деепричастие)</td><td>хотеться</td></tr>
+        <tr><td>X</td><td>другое</td><td>Honda</td></tr>
+    </table>
+{% endblock %}
